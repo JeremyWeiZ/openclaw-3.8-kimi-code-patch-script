@@ -35,6 +35,14 @@ This brings the affected compiled bundles back in line with the source-level sch
 - It does **not** guarantee future upgrades will preserve the patch
 - It does **not** address unrelated Kimi runtime issues beyond this schema mismatch
 
+## Risks
+
+- You are modifying **compiled release files** under your installed OpenClaw package, not changing the upstream source tree
+- A future OpenClaw update or reinstall may overwrite the patch
+- If OpenClaw 2026.3.8 on your machine has additional release-artifact inconsistencies, this script may fix this schema mismatch without fixing every related Kimi issue
+- If your install path is different from `/opt/homebrew/lib/node_modules/openclaw/dist`, you must adjust the script before running it
+- Although the script creates backups first, you should still review the target files it prints during the check phase before proceeding
+
 ## Requirements
 
 - macOS or another environment where your OpenClaw install is under:
