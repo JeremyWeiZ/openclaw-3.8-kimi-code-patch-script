@@ -71,7 +71,7 @@ Then retry your original command.
 The script creates timestamped backups under a path like:
 
 ```text
-/Users/amber/openclaw-dist-backup-YYYYMMDD-HHMMSS
+~/openclaw-dist-backup-YYYYMMDD-HHMMSS
 ```
 
 ## Verify the patch
